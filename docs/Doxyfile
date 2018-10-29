@@ -1,0 +1,30 @@
+PROJECT_NAME     = "rocALUTION"
+XML_OUTPUT       = doxyxml
+GENERATE_LATEX   = NO
+GENERATE_MAN     = NO
+GENERATE_RTF     = NO
+CASE_SENSE_NAMES = NO
+INPUT                  = modules.dox \
+                         ../src/base/backend_manager.hpp \
+                         ../src/base/parallel_manager.hpp \
+                         ../src/utils/allocate_free.hpp \
+                         ../src/utils/time_functions.hpp \
+                         ../src/base/operator.hpp \
+                         ../src/base/vector.hpp \
+                         ../src/base/base_rocalution.hpp \
+                         ../src/base/local_vector.hpp \
+                         ../src/base/global_vector.hpp \
+                         ../src/base/local_matrix.hpp \
+                         ../src/base/global_matrix.hpp \
+                         ../src/base/local_stencil.hpp \
+                         ../src/solvers \
+                         ../src/solvers/krylov \
+                         ../src/solvers/direct \
+                         ../src/solvers/multigrid \
+                         ../src/solvers/preconditioners
+RECURSIVE        = YES
+QUIET            = YES
+JAVADOC_AUTOBRIEF = YES
+GENERATE_HTML = NO
+GENERATE_XML = YES
+
